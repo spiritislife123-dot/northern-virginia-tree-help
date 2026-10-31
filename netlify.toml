@@ -1,0 +1,6 @@
+[build]
+command = "unzip -oq site-source.zip -d . && npm install --include=dev --no-audit --no-fund --prefix tree-source && npm --prefix tree-source run build"
+publish = "tree-source/dist/client"
+
+[build.environment]
+NODE_VERSION = "24"
