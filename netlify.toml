@@ -1,6 +1,6 @@
 [build]
 base = "tree-source"
-command = "unzip -oq ../site-source.zip -d .. && sed -i 's/netlify(), tanstackStart()/tanstackStart(), netlify()/' vite.config.ts && npm install --include=dev --no-audit --no-fund && npm run build"
+command = "unzip -oq ../site-source.zip -d .. && sed -i 's/netlify(), tanstackStart()/tanstackStart(), netlify()/' vite.config.ts && sed -i 's|I agree that Northern Virginia Tree Help may share my contact information and project details with one independent local tree-service provider so they can contact me about my estimate request.|I agree that Northern Virginia Tree Help may share my contact information and project details with a qualified and experienced independent local tree-service provider in my area, so they can contact me about my estimate request.|' src/data/site.ts && npm install --include=dev --no-audit --no-fund && npm run build"
 publish = "dist/client"
 
 [build.environment]
