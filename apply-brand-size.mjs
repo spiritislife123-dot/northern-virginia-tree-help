@@ -79,7 +79,7 @@ replaceExactly(headerPath, 'h-20 max-w-7xl', 'h-24 sm:h-28 max-w-7xl')
 replaceExactly(headerPath, '<Logo tone={solid ? \'forest\' : \'ivory\'} />', '<Logo tone={solid ? \'forest\' : \'ivory\'} size="large" />')
 replaceExactly(headerPath, 'hidden lg:block', 'hidden xl:ml-10 xl:block')
 replaceExactly(headerPath, 'hidden items-center gap-5 lg:flex', 'hidden items-center gap-5 xl:flex')
-replaceExactly(headerPath, 'btn btn-primary px-5 py-3 text-sm', 'btn btn-primary px-6 py-3.5 text-base whitespace-nowrap')
+replaceExactly(headerPath, 'btn btn-primary px-5 py-3 text-sm', 'btn btn-primary px-8 py-4 text-lg min-h-[3.75rem] min-w-[13rem] whitespace-nowrap')
 replaceExactly(headerPath, 'lg:hidden', 'xl:hidden', 2)
 
 const shellPath = join(root, 'src/components/PageShell.tsx')
