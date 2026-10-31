@@ -1,6 +1,7 @@
 [build]
-command = "unzip -oq site-source.zip -d . && sed -i 's/netlify(), tanstackStart()/tanstackStart(), netlify()/' tree-source/vite.config.ts && npm install --include=dev --no-audit --no-fund --prefix tree-source && npm --prefix tree-source run build"
-publish = "tree-source/dist/client"
+base = "tree-source"
+command = "unzip -oq ../site-source.zip -d .. && sed -i 's/netlify(), tanstackStart()/tanstackStart(), netlify()/' vite.config.ts && npm install --include=dev --no-audit --no-fund && npm run build"
+publish = "dist/client"
 
 [build.environment]
 NODE_VERSION = "24"
