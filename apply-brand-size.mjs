@@ -77,7 +77,7 @@ writeFileSync(logoPath, logoSource.slice(0, logoStart) + updatedLogo)
 const headerPath = join(root, 'src/components/SiteHeader.tsx')
 replaceExactly(headerPath, 'h-20 max-w-7xl', 'h-24 sm:h-28 max-w-7xl')
 replaceExactly(headerPath, '<Logo tone={solid ? \'forest\' : \'ivory\'} />', '<Logo tone={solid ? \'forest\' : \'ivory\'} size="large" />')
-replaceExactly(headerPath, 'hidden lg:block', 'hidden xl:block')
+replaceExactly(headerPath, 'hidden lg:block', 'hidden xl:ml-6 xl:block')
 replaceExactly(headerPath, 'hidden items-center gap-5 lg:flex', 'hidden items-center gap-5 xl:flex')
 replaceExactly(headerPath, 'lg:hidden', 'xl:hidden', 2)
 
